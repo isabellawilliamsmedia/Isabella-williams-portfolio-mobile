@@ -106,16 +106,12 @@
         /* ── MOBILE OVERRIDES ── */
         @media (max-width: 768px) {
             body { padding: 0; }
- 
-            /* Hero: use viewport height, tighter margin */
             .hero {
                 margin: 12px;
                 margin-bottom: 60px;
                 height: calc(100svh - 24px);
                 padding: 24px 20px;
             }
- 
-            /* Sticky nav */
             .mobile-nav {
                 position: sticky;
                 top: 0;
@@ -142,19 +138,11 @@
             }
             .mobile-nav a:last-child { border-right: none; }
             .mobile-nav a:active { background: #333; }
- 
             .page-content { padding: 0 0 80px 0; }
- 
             .section { margin-bottom: 55px; max-width: 100%; margin-left: 0; margin-right: 0; padding: 0 24px; }
- 
             .section-title { width: 100%; display: block; box-sizing: border-box; }
- 
             .section:first-child { padding-top: 32px; }
- 
-            /* Design images: tap to expand */
             .design-item { cursor: zoom-in; }
- 
-            /* Lightbox */
             .lightbox-overlay {
                 display: none;
                 position: fixed;
@@ -197,10 +185,8 @@
         <h1>Isabella Williams</h1>
         <p>Portfolio</p>
         <div class="scroll-indicator">[ Scroll Down ]</div>
-      
     </section>
  
-    <!-- Mobile-only sticky nav (hidden on desktop via display:none default, shown via media query) -->
     <style>
         .mobile-nav { display: none; }
         @media (max-width: 768px) { .mobile-nav { display: flex; } }
@@ -273,7 +259,7 @@
         <section class="section" id="design">
             <h2 class="section-title">Design Work</h2>
             <div class="design-grid">
-                <div class="design-item"><img src="https://raw.githubusercontent.com/isabellawilliamsmedia/portfoliodesignwork/main/FashionTalk.png" alt="Fashion Talk"></div>
+                <div class="design-item"><img src="https://raw.githubusercontent.com/isabellawilliamsmedia/portfoliodesignwork/main/FashionTalkMalikMonk-6.png" alt="Fashion Talk"></div>
                 <div class="design-item"><img src="https://raw.githubusercontent.com/isabellawilliamsmedia/portfoliodesignwork/main/LifesPlaybook.png" alt="Lifes Playbook"></div>
                 <div class="design-item"><img src="https://raw.githubusercontent.com/isabellawilliamsmedia/portfoliodesignwork/main/CourtChronicles.png" alt="Court Chronicles"></div>
             </div>
