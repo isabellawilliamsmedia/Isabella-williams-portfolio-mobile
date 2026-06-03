@@ -100,8 +100,56 @@
         .contact-box { border: 3px double #111111; background-color: #FBFBFA; padding: 35px; text-align: center; }
         .contact-box h3 { font-family: 'DM Serif Display', serif; font-size: 1.6rem; margin-bottom: 15px; text-transform: uppercase; }
         .contact-links { display: flex; flex-direction: column; gap: 15px; margin-top: 25px; align-items: center; }
-        .contact-btn { font-family: 'IBM Plex Mono', monospace; display: block; padding: 12px 20px; border: 1px solid #111111; color: #111111; text-decoration: none; font-size: 0.85rem; background-color: #F4F3EF; width: 100%; max-width: 440px; transition: all 0.2s ease; }
+        .contact-btn {
+            font-family: 'IBM Plex Mono', monospace;
+            display: block;
+            padding: 12px 20px;
+            border: 1px solid #111111;
+            color: #111111;
+            text-decoration: none;
+            font-size: 0.75rem;
+            background-color: #F4F3EF;
+            width: 100%;
+            max-width: 440px;
+            transition: all 0.2s ease;
+            word-break: break-all;
+            overflow-wrap: break-word;
+            text-align: center;
+        }
         .contact-btn:hover { background-color: #111111; color: #F4F3EF; }
+ 
+        /* REEL SECTION */
+        .reel-link {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            position: relative;
+            border: 2px solid #111111;
+            background-color: #EAE9E4;
+            padding: 10px;
+            transition: opacity 0.2s ease;
+        }
+        .reel-link:hover { opacity: 0.85; }
+        .reel-link img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #111111;
+        }
+        .reel-play-badge {
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #111111;
+            color: #F4F3EF;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            white-space: nowrap;
+        }
  
         /* ── MOBILE OVERRIDES ── */
         @media (max-width: 768px) {
@@ -194,6 +242,7 @@
     <nav class="mobile-nav" aria-label="Section navigation">
         <a href="#about">About</a>
         <a href="#writing">Writing</a>
+        <a href="#reel">Reel</a>
         <a href="#design">Design</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -254,6 +303,14 @@
                     <a href="https://broncosports.com/news/2025/12/11/b-1-features-from-dubai-to-boise" target="_blank" rel="noopener noreferrer" class="read-link">Read Entry</a>
                 </div>
             </div>
+        </section>
+ 
+        <section class="section" id="reel">
+            <h2 class="section-title">Coverage Reel</h2>
+            <a href="https://vimeo.com/1197914866" target="_blank" rel="noopener noreferrer" class="reel-link">
+                <img src="https://raw.githubusercontent.com/isabellawilliamsmedia/portfoliodesignwork/main/CoverageReel-Cover.jpg" alt="Coverage Reel">
+                <span class="reel-play-badge">▶ Watch Reel</span>
+            </a>
         </section>
  
         <section class="section" id="design">
